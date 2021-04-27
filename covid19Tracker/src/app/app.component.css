@@ -1,0 +1,28 @@
+.home{
+    background: url("D:\aishwarya\Mean-Stack Projects\Mean-Stack-Projects\covid19Tracker\src\assets\images\corona.jpg");
+
+}
+.btn{
+    width:100px;
+height:40px;
+font-size: 20px;
+  border-radius:40px;
+  font-weight: bolder;
+  background-color: lightgreen;
+}
+footer {
+    background: #374147;
+    color: #ccc;
+    flex: 0 0 40px;
+    text-align: center;
+    line-height: 40px;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }

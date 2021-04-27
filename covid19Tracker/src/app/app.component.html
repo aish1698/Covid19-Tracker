@@ -1,0 +1,37 @@
+<div class="home">
+<div >
+    <h1 style="text-align: center;"><b>Covid-19 Live Tracker</b></h1>
+   </div>
+   <br><br>
+
+
+   <div>
+    <label>
+        <strong><b>Select Country:</b></strong>
+    </label>
+    <select (change)="getCountry($event.target.value)">
+        
+     <option *ngFor="let country of countries" value={{country.Slug}}>
+         {{country.Country}}
+     </option>
+    </select>
+   </div>
+   
+    <br><br>
+    <div>
+    <button type="button" class="btn btn-lg btn-outline-info" (click)="getCoronaData()" >Submit</button>
+    </div>
+    <br><br>
+    <div>
+    <h1>Total Confirmed Cases:{{confirmed}}</h1>
+    <h1>Total Recovered Cases:{{recovered}}</h1>
+    <h1>Total Death Cases:{{deaths}}</h1>
+</div>
+
+</div>
+
+<footer>
+
+    &copy; 2021 Corona Virus Cases portal by
+    <a href="https://github.com/aish1698/Mean-Stack-Projects" target="_blank">aish1698</a>
+  </footer>
