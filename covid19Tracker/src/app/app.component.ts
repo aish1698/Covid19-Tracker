@@ -36,8 +36,8 @@ export class AppComponent {
 
     })
   }
-  getCountry(country:any){
-    this.country=country
+  getCountry(event:any){
+    this.country=event.target.value;
 
 
   }

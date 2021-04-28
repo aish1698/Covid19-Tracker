@@ -1,15 +1,15 @@
-<div class="home">
 <div >
-    <h1 style="text-align: center;"><b>Covid-19 Live Tracker</b></h1>
+<div >
+    <h1 style="text-align: center;"><b>Covid-19 Cases Live Tracker</b></h1>
    </div>
    <br><br>
 
 
-   <div>
+   <div style="padding-left: 35%;">
     <label>
-        <strong><b>Select Country:</b></strong>
+        <strong><strong>Select Country:</strong></strong>
     </label>
-    <select (change)="getCountry($event.target.value)">
+    <select (change)="getCountry($event)">
         
      <option *ngFor="let country of countries" value={{country.Slug}}>
          {{country.Country}}
@@ -18,11 +18,11 @@
    </div>
    
     <br><br>
-    <div>
+    <div style="padding-left: 35%;">
     <button type="button" class="btn btn-lg btn-outline-info" (click)="getCoronaData()" >Submit</button>
     </div>
     <br><br>
-    <div>
+    <div style="padding-left: 35%;">
     <h1>Total Confirmed Cases:{{confirmed}}</h1>
     <h1>Total Recovered Cases:{{recovered}}</h1>
     <h1>Total Death Cases:{{deaths}}</h1>
