@@ -38,7 +38,5 @@ export class AppComponent {
   }
   getCountry(event:any){
     this.country=event.target.value;
-
-
   }
 }
